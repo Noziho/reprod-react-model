@@ -2,6 +2,12 @@ import '../../assets/App.css';
 import {Header} from "../Header/Header";
 import {Cart} from "../Cart/Cart";
 import {CartItem} from "../CartItem/CartItem";
+import {Product} from "../Product/Product";
+import {ProductList} from "../ProductsList/ProductList";
+import {QuantitySelector} from "../QuantitySelector/QuantitySelector";
+import {Categories} from "../Categories/Categories";
+
+
 
 function App() {
     return (
@@ -9,11 +15,15 @@ function App() {
             <Header></Header>
             <div className="container">
                 <Cart>
-                    <CartItem name={"Mon product0"} amount={1}></CartItem>
-                    <CartItem name={"Mon product1"} amount={2}></CartItem>
-                    <CartItem name={"Mon product2"} amount={3}></CartItem>
-                    <CartItem name={"Mon product3"} amount={4}></CartItem>
+                    <CartItem></CartItem>
                 </Cart>
+
+                <Product>
+                    <Categories></Categories>
+                    <ProductList>
+                        <QuantitySelector></QuantitySelector>
+                    </ProductList>
+                </Product>
             </div>
         </>
     );

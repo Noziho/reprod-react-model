@@ -1,0 +1,20 @@
+.quantitySelector {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0.5rem;
+}
+
+.quantitySelector > div {
+    margin-inline: 1rem;
+}
+
+button {
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: #00a0dc;
+    color: white;
+    font-size: 1.6rem;
+}

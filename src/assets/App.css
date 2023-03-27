@@ -8,9 +8,15 @@ html {
   padding: 0;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
 .container {
   width: 100%;
   min-height: 100vh;
   margin-top: 6rem;
   padding: 4rem;
+  display: flex;
+  flex-flow: row wrap;
 }
